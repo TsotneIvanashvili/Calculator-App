@@ -21,7 +21,7 @@ buttonsDiv.forEach((butt) => {
     else if (buttText === "=") {
 
       try {
-        let result = current.replace(/x/g, "*").replace(/,/g, ".");
+        let result = current.replace(/x/g, "*");
         output.innerHTML = eval(result);
       } 
       catch {
