@@ -54,3 +54,13 @@ buttonsDiv.forEach((butt) => {
   });
 
 });
+
+
+
+const toggleTrack = document.querySelector(".toggleTrack");
+let theme = 1;
+
+toggleTrack.addEventListener("click", () => {
+  theme = theme === 3 ? 1 : theme + 1;
+  document.body.className = "theme" + theme;
+});

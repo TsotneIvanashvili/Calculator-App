@@ -42,20 +42,20 @@ main {
   gap: 24px;
 }
 
-.theme-text {
+.themeText {
   font-size: 12px;
   letter-spacing: 1px;
   padding-bottom: 6px;
 }
 
-.toggle-nums {
+.toggleNums {
   display: flex;
   justify-content: space-around;
   font-size: 11px;
   padding: 0 6px 4px;
 }
 
-.toggle-track {
+.toggleTrack {
   width: 70px;
   height: 26px;
   border-radius: 13px;
@@ -63,7 +63,7 @@ main {
   cursor: pointer;
 }
 
-.toggle-handle {
+.toggleHandle {
   position: absolute;
   top: 5px;
   width: 16px;
@@ -72,9 +72,15 @@ main {
   transition: left 0.15s ease;
 }
 
-body.theme-1 .toggle-handle { left: 6px; }
-body.theme-2 .toggle-handle { left: 27px; }
-body.theme-3 .toggle-handle { left: 48px; }
+body.theme1 .toggleHandle { 
+  left: 6px; 
+}
+body.theme2 .toggleHandle { 
+  left: 27px; 
+}
+body.theme3 .toggleHandle { 
+  left: 48px; 
+}
 
 .output {
   border-radius: 10px;
@@ -120,8 +126,7 @@ button:hover {
   filter: brightness(1.08);
 }
 
-.buttons button:nth-child(4),
-.twoButt button {
+.buttons button:nth-child(4), .twoButt button {
   font-size: 20px;
 }
 
@@ -135,30 +140,105 @@ button:hover {
 }
 
 
-body.theme-1 {
+body.theme1 {
   background: hsl(222, 26%, 31%);
   color: hsl(0, 0%, 100%);
 }
-body.theme-1 .output { background: hsl(224, 36%, 15%); }
-body.theme-1 .input { background: hsl(223, 31%, 20%); }
-body.theme-1 .toggle-track { background: hsl(223, 31%, 20%); }
-body.theme-1 .toggle-handle { background: hsl(6, 63%, 50%); }
+
+body.theme1 .output { 
+  background: hsl(224, 36%, 15%); 
+}
+
+body.theme1 .input { 
+  background: hsl(223, 31%, 20%); 
+}
+
+body.theme1 .toggleTrack { 
+  background: hsl(223, 31%, 20%); 
+}
+
+body.theme1 .toggleHandle { 
+  background: hsl(6, 63%, 50%); 
+}
  
-body.theme-1 .buttons button {
+body.theme1 .buttons button {
   background: hsl(30, 25%, 89%);
   box-shadow: inset 0 -4px 0 hsl(28, 16%, 65%);
   color: hsl(221, 14%, 31%);
 }
-body.theme-1 .buttons button:nth-child(4),
-body.theme-1 .twoButt button:first-child {
+
+body.theme1 .buttons button:nth-child(4), body.theme1 .twoButt button:first-child {
   background: hsl(225, 21%, 49%);
   box-shadow: inset 0 -4px 0 hsl(224, 28%, 35%);
   color: hsl(0, 0%, 100%);
 }
-body.theme-1 .twoButt button:last-child {
+
+body.theme1 .twoButt button:last-child {
   background: hsl(6, 63%, 50%);
   box-shadow: inset 0 -4px 0 hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+  font-size: 40px;
+}
+
+
+body.theme2 { 
+  background: hsl(0, 0%, 90%); color: hsl(60, 10%, 19%); 
+
+}
+
+body.theme2 .output { 
+  background: hsl(0, 0%, 93%); 
+}
+
+body.theme2 .input, body.theme2 .toggleTrack { 
+  background: hsl(0, 5%, 81%); 
+}
+body.theme2 .toggleHandle { 
+  background: hsl(25, 98%, 40%); 
+}
+
+body.theme2 .buttons button {
+  background: hsl(45, 7%, 89%);
+  box-shadow: inset 0 -4px 0 hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+
+body.theme2 .buttons button:nth-child(4), body.theme2 .twoButt button:first-child {
+  background: hsl(185, 42%, 37%);
+  box-shadow: inset 0 -4px 0 hsl(185, 58%, 25%);
   color: hsl(0, 0%, 100%);
 }
 
 
+body.theme2 .twoButt button:last-child {
+  background: hsl(25, 98%, 40%);
+  box-shadow: inset 0 -4px 0 hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.theme3 { 
+  background: hsl(268, 75%, 9%); color: hsl(52, 100%, 62%); 
+}
+body.theme3 .output, body.theme3 .input, body.theme3 .toggleTrack { 
+  background: hsl(268, 71%, 12%); 
+}
+body.theme3 .toggleHandle { 
+  background: hsl(176, 100%, 44%); 
+}
+
+body.theme3 .buttons button {
+  background: hsl(268, 47%, 21%);
+  box-shadow: inset 0 -4px 0 hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+body.theme3 .buttons button:nth-child(4), body.theme3 .twoButt button:first-child {
+  background: hsl(281, 89%, 26%);
+  box-shadow: inset 0 -4px 0 hsl(285, 91%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+body.theme3 .twoButt button:last-child {
+  background: hsl(176, 100%, 44%);
+  box-shadow: inset 0 -4px 0 hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
